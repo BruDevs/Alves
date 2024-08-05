@@ -1,4 +1,4 @@
-body {
+.main {
     background-image: url("../img/bkgSpace.png"); /* Certifique-se que o caminho está correto */
     background-size: cover;
     font-family: Arial, sans-serif;
@@ -7,6 +7,18 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+.main_hob {
+    background-image: url("../img/bkgspace2.jpg"); /* Certifique-se que o caminho está correto */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
 
 a{color: #fff;}
 
