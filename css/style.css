@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor--principal: #880606;
+    --cor--secundaria: goldenrod;
+    --cor--terciaria: whitesmoke;
+}
+
+
+body{
+    background-color: var(--cor--principal);
+    color: var(--cor--terciaria);
+    box-sizing: border-box;
+}
+
+
+.cabecalho{
+    padding: 2% 0 0 6%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor--secundaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 6%; 
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 26px;
+    font-family: "Krona One", sans-serif;
+    text-align: justify;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.apresentacao__links__subtitulo{
+    font: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link{
+    /* background-color: orangered; */
+    border: 2px solid #c5b911;
+    width: 388px;
+    text-align: center;
+    border-radius: 8px;
+    color: var(--cor--terciaria);
+    font-size: 24px;
+    padding: 8px 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao__links__link:hover{
+    background-color: #be0a0a;
+}
+
+.apresentacao__links__imagem{
+    width: 32px;
+    height: 32px;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+}
+
+strong{
+    color: #c5b911; 
+}
+
+.titulo-destaque{
+    color: var(--cor--secundaria);
+}
+
+img{
+    height:35%;
+    width:35%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rodape{
+    background-color: var(--cor--secundaria);
+    color: var(--cor--terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* estilo pagina sobre mim */
+
+.conteudo__informacoes{
+    margin: 5% 25%;
+}
+
+.conteudo__informacoes__titulo{
+    font-family: "Krona One", sans-serif;
+    color: #c5b911;
+    margin-top: 4%;
+}
+
+.conteudo__informacoes_texto{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+    padding: 2% 0;
+}
+
+.conteudo__informacoes__item{
+    padding: 2%;
+}
