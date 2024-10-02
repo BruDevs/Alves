@@ -151,7 +151,9 @@ strong{
 @media (max-width: 720px){
 
     .cabecalho{
-        padding: 6%;        
+        padding: 6%;
+        gap: 20px;
+        width: auto;        
     }
 
     .apresentacao{
