@@ -36,17 +36,17 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 3% 6%; 
+    gap: 82px;
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 26px;
+    font-size: 1.6rem;
     font-family: "Krona One", sans-serif;
     text-align: justify;
 }
@@ -62,17 +62,17 @@ body{
 .apresentacao__links__subtitulo{
     font: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     /* background-color: orangered; */
     border: 2px solid #c5b911;
-    width: 388px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     color: var(--cor--terciaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 8px 0;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -92,7 +92,7 @@ body{
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
 }
@@ -105,10 +105,6 @@ strong{
     color: var(--cor--secundaria);
 }
 
-img{
-    height:35%;
-    width:35%;
-}
 
 *{
     margin: 0;
@@ -122,7 +118,7 @@ img{
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 /* estilo pagina sobre mim */
@@ -139,11 +135,33 @@ img{
 
 .conteudo__informacoes_texto{
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: whitesmoke;
     padding: 2% 0;
 }
 
 .conteudo__informacoes__item{
     padding: 2%;
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+@media (max-width: 1000px){
+
+    .cabecalho{
+        padding: 6%;        
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+
 }
