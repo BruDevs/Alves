@@ -23,12 +23,30 @@ body{
     gap: 80px;
 }
 
-.cabecalho__menu__link{
+.cabecalho__menu__link {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 600;
     color: var(--cor--secundaria);
     text-decoration: none;
+    position: relative;
+}
+
+.cabecalho__menu__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Coloca a linha na parte inferior do link */
+    left: 25%; /* Centraliza a linha */
+    width: 50%; /* Define a linha para cobrir 50% da largura do link */
+    height: 2px; /* Define a espessura da linha */
+    background-color: var(--cor--terciaria); /* Cor da linha */
+    transform: scaleX(0); /* Esconde a linha inicialmente */
+    transition: transform 0.3s ease; /* Transição lenta */
+    transform-origin: center; /* Define o ponto de origem da transformação */
+}
+
+.cabecalho__menu__link:hover::after {
+    transform: scaleX(1); /* Exibe a linha ao passar o cursor */
 }
 
 .apresentacao{
@@ -95,6 +113,11 @@ body{
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
+}
+
+.apresentacao__imagem{
+    border-radius: 15px;
+    width: 70%;
 }
 
 strong{
